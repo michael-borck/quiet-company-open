@@ -9,10 +9,21 @@ This repository is the public half of the project. The business repo is private.
 ## What is here
 
 ```
-brand/     logo files (stillpoint wordmark pending; legacy files removed)
-models/    printable STLs (also published as Releases)
-pages/     static pages for the QR links on the insight cards
+index.html                        home
+guardian.html sage.html everyman.html
+credits.html 404.html
+assets/                           stylesheet, favicon
+brand/                            wordmark (pending)
+models/                           printable STLs (also published as Releases)
 ```
+
+## Site
+
+The site is static HTML at the repo root, served by GitHub Pages:
+
+https://michael-borck.github.io/stillpoint-open/
+
+No JavaScript, no tracking, no build step. Pages publishes from `main` / root. Edit the HTML and CSS and push.
 
 ## Licence
 
