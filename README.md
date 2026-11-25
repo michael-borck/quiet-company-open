@@ -1,13 +1,15 @@
-# Enlightened Figurines — open assets
+# Stillpoint Studio — open assets
 
 Original 3D-printable figurines and the brand kit behind them. The idea: small, wry sculptures that borrow the calm of Buddhist iconography without borrowing anyone's copyrighted characters.
+
+v1 is three designs: The Guardian, The Sage, The Everyman. Dragons and other collections come later.
 
 This repository is the public half of the project. The business repo is private.
 
 ## What is here
 
 ```
-brand/     logo files
+brand/     logo files (stillpoint wordmark pending; legacy files removed)
 models/    printable STLs (also published as Releases)
 pages/     static pages for the QR links on the insight cards
 ```
