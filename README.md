@@ -1,4 +1,4 @@
-# Stillpoint Studio — open assets
+# Quiet Company: open assets
 
 Original 3D-printable figurines and the brand kit behind them. The idea: small, wry sculptures that borrow the calm of Buddhist iconography without borrowing anyone's copyrighted characters.
 
@@ -25,7 +25,7 @@ models/                           printable STLs (published as Releases, not in 
 
 The site is static HTML at the repo root, served by GitHub Pages:
 
-https://michael-borck.github.io/stillpoint-open/
+https://michael-borck.github.io/quiet-company-open/
 
 No tracking, no build step, no dependencies. The gallery, quiz and card page use two small JavaScript files; nothing is sent or stored. Pages publishes from `main` / root. Edit and push.
 
@@ -39,7 +39,7 @@ See `LICENSE` for the full scope. Third-party models are credited in `CREDITS.md
 
 ## Printing
 
-- Layer height 0.2 mm, 0.6 mm nozzle, 3 perimeters, 10–15% gyroid. No supports.
+- Layer height 0.2 mm, 0.6 mm nozzle, 3 perimeters, 10 to 15% gyroid. No supports.
 - Print `joint-coupon.stl` first and check which numbered cap fits your printer. The heads use the cap 2 clearance (0.25 mm per side).
 - Heads stand on a 17 mm neck: use a brim. Do not scale parts, or the neck joint will no longer fit. Keep fuzzy skin off the neck and the cup.
 - Matte PLA. Rainbow is a gradient filament; every piece differs.

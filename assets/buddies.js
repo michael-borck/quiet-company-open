@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: MIT
-// Stillpoint: the line-up, the quiz and the card for each buddy.
+// Quiet Company: the line-up, the quiz and the card for each buddy.
 // One file, no dependencies, no tracking, nothing sent anywhere.
 // The CODE in this file is MIT. The card TEXT (taglines, practices, quiz
-// wording) is copyright Stillpoint Studio, all rights reserved. See LICENSE.
+// wording) is copyright Quiet Company, all rights reserved. See LICENSE.
 (function () {
   "use strict";
 
@@ -135,5 +135,5 @@
   // scaled up before matching. Tuned so every head comes up (see docs/QUIZ.md).
   var api = { stretch: 2.6, BODIES: BODIES, HEADS: HEADS, QUESTIONS: QUESTIONS, BODY_QUESTION: BODY_QUESTION, match: match };
   if (typeof module !== "undefined" && module.exports) module.exports = api;
-  else window.STILLPOINT = api;
+  else window.QUIET_COMPANY = api;
 })();

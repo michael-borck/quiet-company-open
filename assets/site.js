@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: MIT
-// Stillpoint: page behaviour. Builds the gallery, the quiz and the buddy card
+// Quiet Company: page behaviour. Builds the gallery, the quiz and the buddy card
 // from assets/buddies.js. No dependencies, no tracking, no network calls.
 (function () {
   "use strict";
-  var S = window.STILLPOINT;
+  var S = window.QUIET_COMPANY;
   var HEAD_IDS = Object.keys(S.HEADS), BODY_IDS = Object.keys(S.BODIES);
 
   function el(tag, cls, text) {
@@ -52,7 +52,7 @@
       return;
     }
     var h = S.HEADS[head], b = S.BODIES[body];
-    document.title = h.name + ", " + b.name.toLowerCase() + " \u2014 Stillpoint Studio";
+    document.title = h.name + ", " + b.name.toLowerCase() + " | Quiet Company";
 
     var art = el("div", "figure-art buddy-art");
     art.appendChild(picture("assets/figures/" + head + "-" + body + ".webp",
@@ -76,10 +76,13 @@
     copy.appendChild(el("h2", null, "The practice"));
     var pr = el("div", "practice"); pr.appendChild(el("p", null, h.practice)); copy.appendChild(pr);
 
+    copy.appendChild(el("h2", null, "How to use it"));
+    copy.appendChild(el("p", null, "Stuck on something? Explain it to your buddy out loud, from the start. It will not answer. You usually will."));
+
     copy.appendChild(el("h2", null, "Details"));
     var specs = el("ul", "specs");
     [["Height", body === "seated" ? "about 11 cm" : "about 14 cm"], ["Material", "Matte PLA, printed to order"],
-     ["Finishes", "Still / Shadow / Becoming"], ["Head", "Lifts off; fits all three poses"]].forEach(function (r) {
+     ["Finishes", "Still / Shadow / Becoming"], ["Head", "Arrives separate. Push it on; it fits all three poses"]].forEach(function (r) {
       var li = el("li"); li.appendChild(el("span", null, r[0])); li.appendChild(el("span", null, r[1])); specs.appendChild(li);
     });
     copy.appendChild(specs);
