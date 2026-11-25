@@ -302,6 +302,74 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 400; }
 
 .small { font-size: 12px; }
 
+
+/* Buttons, gallery, quiz, buddy card */
+
+.button {
+  display: inline-block;
+  padding: 14px 26px;
+  border: 1.5px solid var(--ink);
+  background: var(--ink);
+  color: var(--paper);
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+.button:hover { background: var(--paper); color: var(--ink); }
+.hero .button { margin-bottom: 4px; }
+
+img { height: auto; }
+
+.pose img { width: 100%; max-width: 220px; margin: 0 0 14px; }
+.pose h3 { margin: 0 0 6px; font-size: 26px; letter-spacing: -0.01em; }
+.pose p { margin: 0; max-width: 30ch; font-size: 15px; color: var(--muted); }
+
+.tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(132px, 1fr));
+  gap: clamp(14px, 2.4vw, 28px);
+}
+.tile { display: block; text-decoration: none; text-align: center; }
+.tile img { width: 100%; max-width: 150px; margin: 0 auto 8px; transition: transform 0.2s ease; }
+.tile:hover img { transform: translateY(-4px); }
+.tile-name { font-size: 14px; color: var(--muted); }
+.tile:hover .tile-name { color: var(--ink); text-decoration: underline; text-underline-offset: 4px; }
+
+.quiz { max-width: 720px; min-height: 60vh; }
+.quiz-q { outline: none; }
+.options { display: grid; gap: 12px; margin: 8px 0 28px; }
+.option {
+  width: 100%;
+  padding: 16px 20px;
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--ink);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+.option:hover, .option:focus-visible { border-color: var(--ink); }
+button.plain { border: 0; background: none; padding: 0; margin-top: 0; font-family: inherit; cursor: pointer; }
+
+.buddy-art img { width: 100%; max-width: 300px; margin: 0 auto; }
+.switch { display: flex; gap: 0; margin: 0 0 18px; flex-wrap: wrap; }
+.switch a {
+  padding: 8px 16px;
+  border: 1px solid var(--line);
+  margin-right: -1px;
+  font-size: 14px;
+  color: var(--muted);
+  text-decoration: none;
+}
+.switch a:hover { color: var(--ink); }
+.switch a.on { border-color: var(--ink); color: var(--ink); position: relative; }
+.links { display: flex; gap: 28px; flex-wrap: wrap; margin: 0; }
+
+@media (prefers-reduced-motion: reduce) {
+  .tile img { transition: none; }
+}
+
 /* Responsive */
 
 @media (max-width: 760px) {

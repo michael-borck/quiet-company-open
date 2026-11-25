@@ -4,14 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Stillpoint Studio — small figures for the still point</title>
-<meta name="description" content="Original 3D-printed figurines in white, black, or rainbow. One card with each. Made in small batches.">
+<meta name="description" content="One calm monk, three poses, twenty-three swappable heads. Original 3D-printed figures, printed to order, one card with each.">
 <meta name="theme-color" content="#ffffff">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500&amp;family=Inter:wght@400;500&amp;display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/style.css">
-<meta property="og:title" content="Stillpoint Studio">
+<meta property="og:title" content="Stillpoint Studio — small figures for the still point">
 <meta property="og:description" content="Small figures for the still point.">
 <meta property="og:type" content="website">
 </head>
@@ -27,7 +27,8 @@
     <span>STILLPOINT</span>
   </a>
   <nav aria-label="Primary">
-    <a href="#figures">Figures</a>
+    <a href="quiz.html">Quiz</a>
+    <a href="#heads">Heads</a>
     <a href="#finishes">Finishes</a>
     <a href="credits.html">Credits</a>
   </nav>
@@ -38,110 +39,27 @@
   <section class="hero">
     <p class="eyebrow">Stillpoint Studio</p>
     <h1>Small figures for the still point.</h1>
-    <p class="lede">Original 3D-printed figurines. White, black, or rainbow. One card with each.</p>
+    <p class="lede">One calm monk, three poses, twenty-three heads that lift off and swap. Printed to order in Still (white), Shadow (black) or Becoming (rainbow). One card with each.</p>
     <div class="rule" aria-hidden="true"></div>
-    <p class="availability">First release at a local market, then online. <a href="credits.html#contact">Questions</a>.</p>
+    <p><a class="button" href="quiz.html">Find your buddy</a></p>
+    <p class="availability">Seven questions, about a minute. Shop opening soon. <a href="credits.html#contact">Questions</a>.</p>
   </section>
 
-  <section id="figures" class="section">
+  <section id="poses" class="section">
     <div class="section-head">
-      <h2>The first three</h2>
-      <p>One set. Three ways to sit with it.</p>
+      <h2>Three poses</h2>
+      <p>The same monk, sitting, welcoming or walking. Every head fits every pose.</p>
     </div>
-    <div class="grid">
+    <div class="grid" id="js-poses"></div>
+  </section>
 
-      <a class="card" href="guardian.html">
-        <svg viewBox="0 0 200 200" aria-hidden="true" focusable="false">
-          <defs>
-            <mask id="mask-guardian" maskUnits="userSpaceOnUse" x="0" y="0" width="200" height="200">
-              <rect width="200" height="200" fill="#000"/>
-              <g fill="#fff">
-                <circle cx="100" cy="42" r="17"/>
-                <rect x="91" y="55" width="18" height="14"/>
-                <path d="M64 92c4-16 68-16 72 0 2 14-4 26-14 32H78c-10-6-16-18-14-32Z"/>
-                <path d="M64 94c-10 12-14 28-10 42 2 6 8 6 10 0 2-14 2-28 6-38Z"/>
-                <path d="M132 96c10-8 14-22 14-36h12c0 18-6 36-20 46Z"/>
-                <circle cx="153" cy="54" r="7"/>
-                <path d="M50 132c0 24 100 24 100 0 0-10-10-14-18-10-12 6-52 6-64 0-8-4-18 0-18 10Z"/>
-                <circle cx="58" cy="140" r="5"/>
-                <rect x="44" y="170" width="112" height="3" rx="1.5"/>
-              </g>
-              <g fill="#000">
-                <rect x="84" y="38" width="32" height="8" rx="2"/>
-              </g>
-            </mask>
-          </defs>
-          <rect width="200" height="200" fill="currentColor" mask="url(#mask-guardian)"/>
-        </svg>
-        <h3>The Guardian</h3>
-        <p>For the one who always has to save the group chat.</p>
-        <span class="more">View</span>
-      </a>
-
-      <a class="card" href="sage.html">
-        <svg viewBox="0 0 200 200" aria-hidden="true" focusable="false">
-          <defs>
-            <mask id="mask-sage" maskUnits="userSpaceOnUse" x="0" y="0" width="200" height="200">
-              <rect width="200" height="200" fill="#000"/>
-              <g fill="#fff">
-                <path d="M100 20c17 0 30 19 30 42 0 13-9 21-30 21s-30-8-30-21c0-23 13-42 30-42Z"/>
-                <path d="M64 92c4-16 68-16 72 0 2 14-4 26-14 32H78c-10-6-16-18-14-32Z"/>
-                <path d="M64 94c-10 12-14 28-10 42 2 6 8 6 10 0 2-14 2-28 6-38Z"/>
-                <path d="M136 94c10 12 14 28 10 42-2 6-8 6-10 0-2-14-2-28-6-38Z"/>
-                <circle cx="58" cy="140" r="5"/>
-                <circle cx="142" cy="140" r="5"/>
-                <path d="M50 132c0 24 100 24 100 0 0-10-10-14-18-10-12 6-52 6-64 0-8-4-18 0-18 10Z"/>
-                <rect x="44" y="170" width="112" height="3" rx="1.5"/>
-                <path d="M156 64v104" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
-                <circle cx="156" cy="60" r="6"/>
-              </g>
-              <g>
-                <path d="M86 44c0-8 28-8 28 0 0 11-28 11-28 0Z" fill="#000"/>
-                <ellipse cx="100" cy="47" rx="9" ry="9" fill="#fff"/>
-                <rect x="78" y="114" width="44" height="15" rx="3" fill="#000"/>
-                <rect x="84" y="118" width="32" height="7" rx="1" fill="#fff"/>
-              </g>
-            </mask>
-          </defs>
-          <rect width="200" height="200" fill="currentColor" mask="url(#mask-sage)"/>
-        </svg>
-        <h3>The Sage</h3>
-        <p>For the one who gives advice you actually take.</p>
-        <span class="more">View</span>
-      </a>
-
-      <a class="card" href="everyman.html">
-        <svg viewBox="0 0 200 200" aria-hidden="true" focusable="false">
-          <defs>
-            <mask id="mask-everyman" maskUnits="userSpaceOnUse" x="0" y="0" width="200" height="200">
-              <rect width="200" height="200" fill="#000"/>
-              <g fill="#fff">
-                <circle cx="100" cy="42" r="17"/>
-                <rect x="91" y="55" width="18" height="14"/>
-                <path d="M64 92c4-16 68-16 72 0 4 18-4 34-36 38-32-4-40-20-36-38Z"/>
-                <path d="M64 94c-10 12-14 28-10 42 2 6 8 6 10 0 2-14 2-28 6-38Z"/>
-                <path d="M134 96c10 6 12 16 10 24l-8-2c0-8-2-14-8-18Z"/>
-                <circle cx="140" cy="120" r="5"/>
-                <rect x="140" y="110" width="16" height="15" rx="2"/>
-                <circle cx="158" cy="117" r="7"/>
-                <path d="M50 132c0 24 100 24 100 0 0-10-10-14-18-10-12 6-52 6-64 0-8-4-18 0-18 10Z"/>
-                <circle cx="58" cy="140" r="5"/>
-                <rect x="44" y="170" width="112" height="3" rx="1.5"/>
-              </g>
-              <g>
-                <path d="M92 48c4 5 12 5 16 0" stroke="#000" stroke-width="3" stroke-linecap="round" fill="none"/>
-                <circle cx="158" cy="117" r="4" fill="#000"/>
-              </g>
-            </mask>
-          </defs>
-          <rect width="200" height="200" fill="currentColor" mask="url(#mask-everyman)"/>
-        </svg>
-        <h3>The Everyman</h3>
-        <p>For the one who is fine, actually.</p>
-        <span class="more">View</span>
-      </a>
-
+  <section id="heads" class="section">
+    <div class="section-head">
+      <h2>Twenty-three heads</h2>
+      <p>All original. All with their eyes closed. Pick one, or let the quiz pick.</p>
     </div>
+    <div class="tiles" id="js-gallery"></div>
+    <noscript><p class="lede">The gallery and the quiz need JavaScript. Nothing is tracked and nothing is sent anywhere.</p></noscript>
   </section>
 
   <section id="finishes" class="section">
@@ -170,7 +88,7 @@
 
   <section class="section prose">
     <h2>Made, not manufactured</h2>
-    <p>Designed as original sculpts. Printed in PLA on a small farm of Prusa and Ultimaker machines. Sanded where it matters, left matte where it doesn't. Each piece ships with a card and a QR to the longer story.</p>
+    <p>Designed as original sculpts. Printed in PLA on a small farm of Prusa and Ultimaker machines. Sanded where it matters, left matte where it doesn't. Printed to order, so yours is made for you. Each piece ships with a card and a QR to the longer story.</p>
   </section>
 
 </main>
@@ -180,5 +98,7 @@
   <p>3D models <a href="credits.html#models">CC BY-NC 4.0</a>. Cards, brand and photography all rights reserved. <a href="credits.html">Credits</a>. <a href="https://github.com/michael-borck/stillpoint-open/issues">Corrections</a>.</p>
 </footer>
 
+<script src="assets/buddies.js"></script>
+<script src="assets/site.js"></script>
 </body>
 </html>

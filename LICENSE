@@ -21,14 +21,18 @@ controls which is which.
    "Model: <title> by <author>, licensed CC BY-NC 4.0, source: <url>.
     Changes: <none or description>."
 
-2. INSIGHT CARDS, BRAND, LOGO, PHOTOGRAPHY (cards/, brand/, pages/)
+2. INSIGHT CARDS, QUIZ TEXT, BRAND, LOGO, PHOTOGRAPHY, RENDERS
+   (cards/, brand/, pages/, assets/figures/, and the taglines, practices
+   and quiz wording inside assets/buddies.js)
    Copyright (c) the project owner. All rights reserved.
    You may show the logo to refer to the project. You may not reuse it as
-   your own brand, or reproduce the card text commercially.
+   your own brand, or reproduce the card or quiz text commercially.
 
 3. CODE (any file with an SPDX-License-Identifier: MIT header, or a
    LICENSE file in its directory)
    MIT Licence. See https://opensource.org/license/mit
+   The MIT licence covers the code only. Text that a code file carries
+   (section 2) and the 3D models (section 1) keep their own terms.
 
 4. THIRD-PARTY MODELS
    Not relicensed here. See CREDITS.md for the author, source, and licence
