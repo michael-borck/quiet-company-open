@@ -1,0 +1,43 @@
+Enlightened Figurines — public licence scope
+=============================================
+
+This repository contains assets under different licences. The scope below
+controls which is which.
+
+1. ORIGINAL 3D MODELS (models/)
+   Licence: Creative Commons Attribution-NonCommercial 4.0 International
+   (CC BY-NC 4.0)
+
+   You may share and adapt these models for non-commercial purposes,
+   provided you give appropriate credit, link to the licence, and indicate
+   whether changes were made. You may not use them for commercial purposes.
+
+   Full legal code:
+   https://creativecommons.org/licenses/by-nc/4.0/legalcode
+   Human-readable summary:
+   https://creativecommons.org/licenses/by-nc/4.0/
+
+   Attribution format:
+   "Model: <title> by <author>, licensed CC BY-NC 4.0, source: <url>.
+    Changes: <none or description>."
+
+2. INSIGHT CARDS, BRAND, LOGO, PHOTOGRAPHY (cards/, brand/, pages/)
+   Copyright (c) the project owner. All rights reserved.
+   You may show the logo to refer to the project. You may not reuse it as
+   your own brand, or reproduce the card text commercially.
+
+3. CODE (any file with an SPDX-License-Identifier: MIT header, or a
+   LICENSE file in its directory)
+   MIT Licence. See https://opensource.org/license/mit
+
+4. THIRD-PARTY MODELS
+   Not relicensed here. See CREDITS.md for the author, source, and licence
+   of each. If a third-party model's licence conflicts with this file, the
+   third-party licence controls for that model.
+
+5. WHAT THIS LICENCE CANNOT COVER
+   These licences cover only rights held by the project owner. They do not
+   grant any right in a third-party character, trademark, or sculpture.
+
+NOTE TO MAINTAINER: paste the full CC BY-NC 4.0 legal code below this line
+before publishing, and keep the canonical URL above it.
