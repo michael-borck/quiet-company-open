@@ -24,7 +24,7 @@
     HEAD_IDS.forEach(function (id) {
       var a = el("a", "tile");
       a.href = buddyUrl(id, "seated");
-      a.appendChild(picture("assets/figures/head-" + id + ".webp", "", 216, 234));
+      a.appendChild(picture("assets/figures/head-" + id + ".webp", "", 270, 300));
       a.appendChild(el("span", "tile-name", S.HEADS[id].name));
       root.appendChild(a);
     });
@@ -56,7 +56,7 @@
 
     var art = el("div", "figure-art buddy-art");
     art.appendChild(picture("assets/figures/" + head + "-" + body + ".webp",
-      h.name + ", " + b.name.toLowerCase() + ". Preview render.", 300, 450));
+      h.name + ", " + b.name.toLowerCase() + ". Preview render.", 312, 528));
     var copy = el("div", "figure-copy");
     copy.appendChild(el("p", "eyebrow", q.get("from") === "quiz" ? "Your buddy" : b.word));
     copy.appendChild(el("h1", null, h.name));
@@ -78,7 +78,7 @@
 
     copy.appendChild(el("h2", null, "Details"));
     var specs = el("ul", "specs");
-    [["Height", body === "seated" ? "about 10 cm" : "about 12 cm"], ["Material", "Matte PLA, printed to order"],
+    [["Height", body === "seated" ? "about 11 cm" : "about 14 cm"], ["Material", "Matte PLA, printed to order"],
      ["Finishes", "Still / Shadow / Becoming"], ["Head", "Lifts off; fits all three poses"]].forEach(function (r) {
       var li = el("li"); li.appendChild(el("span", null, r[0])); li.appendChild(el("span", null, r[1])); specs.appendChild(li);
     });

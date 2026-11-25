@@ -9,7 +9,7 @@
   // Three poses of the same monk body. Any head fits any body.
   var BODIES = {
     seated:   { name: "Sitting",  word: "Stillness", line: "Sitting with it. Nothing to fix for the next five minutes." },
-    standing: { name: "Welcoming", word: "Welcome",  line: "Arms open, palms up. Nothing to hand over; you are just glad they came." },
+    standing: { name: "Standing", word: "Patience",  line: "Hands tucked into the sleeves. Nothing to reach for; you can wait." },
     walking:  { name: "Walking",  word: "Journey",   line: "Mid step, staff in hand. You are allowed to be on the way." }
   };
 
@@ -103,7 +103,7 @@
 
   var BODY_QUESTION = { q: "And where are you at the moment?", a: [
     ["Sitting with it", "seated"],
-    ["Glad to see whoever walks in", "standing"],
+    ["Standing by, in no hurry", "standing"],
     ["On my way somewhere", "walking"] ] };
 
   // Largest swing each trait can get from the questions, so answers scale to -2..2.
