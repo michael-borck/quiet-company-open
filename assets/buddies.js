@@ -86,7 +86,9 @@
     elf:       { name: "The Elf",       t: [-2, 0, 1, -2],   tag: "For the one who makes the thing and lets someone else hand it over.",
                  practice: "Sign your work today." },
     orc:       { name: "The Orc",       t: [-1, 0, -2, 2],   tag: "For the one who looks cross and is only thinking.",
-                 practice: "Tell one person what the face means." }
+                 practice: "Tell one person what the face means." },
+    troll:     { name: "The Troll",     t: [-2, -1, 1, 1],   tag: "For the one who is happy under the bridge, thanks.",
+                 practice: "Let one person cross today without the riddle." }
   };
 
   // Each answer nudges the traits: [energy, company, heart, wildness].
