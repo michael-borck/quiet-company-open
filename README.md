@@ -2,7 +2,7 @@
 
 Original 3D-printable figurines and the brand kit behind them. The idea: small, wry sculptures that borrow the calm of Buddhist iconography without borrowing anyone's copyrighted characters.
 
-v1 is one calm monk in three poses (sitting, standing, walking) and 26 original heads that lift off and swap: archetypes like the robot and the wizard, and animals like the frog and the owl. A short quiz picks one for you.
+v1 is one calm monk in three poses (sitting, standing, walking) and 34 original heads that lift off and swap: archetypes like the robot and the wizard, and animals like the frog and the owl. A short quiz picks one for you.
 
 This repository is the public half of the project. The business repo is private.
 

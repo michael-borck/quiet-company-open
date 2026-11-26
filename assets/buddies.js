@@ -70,7 +70,23 @@
     giraffe:   { name: "The Giraffe",   t: [0, -1, 1, -2],   tag: "For the one who saw it coming from a long way off.",
                  practice: "Bring your head down to where everyone else is for one conversation today." },
     jester:    { name: "The Jester",    t: [0, 2, -1, 2],    tag: "For the one who says the true thing as a joke.",
-                 practice: "Say one true thing today without the joke. The bells can stay on." }
+                 practice: "Say one true thing today without the joke. The bells can stay on." },
+    unicorn:   { name: "The Unicorn",   t: [1, -1, 2, 2],    tag: "For the one who is told they can't be real, and turns up anyway.",
+                 practice: "Do one thing today exactly the way you would if nobody was watching." },
+    cyclops:   { name: "The Cyclops",   t: [0, 0, -2, -1],   tag: "For the one who can only look at one thing at a time.",
+                 practice: "Pick the one thing. Look at it until it is done." },
+    minotaur:  { name: "The Minotaur",  t: [1, -1, 0, -1],   tag: "For the one who knows the way out and stays to help.",
+                 practice: "Walk someone through the part you already know by heart." },
+    ghost:     { name: "The Ghost",     t: [-1, -2, 2, -1],  tag: "For the one who was here the whole time.",
+                 practice: "Say one thing in the next meeting before anyone asks you." },
+    mummy:     { name: "The Mummy",     t: [-1, 1, -1, 1],   tag: "For the one holding it together, loosely.",
+                 practice: "Unwind one thing you wrapped up too tight." },
+    dragon:    { name: "The Dragon",    t: [2, -2, 0, 1],    tag: "For the one sitting on a pile of unfinished projects.",
+                 practice: "Pick one treasure from the hoard and give it away finished." },
+    elf:       { name: "The Elf",       t: [-2, 0, 1, -2],   tag: "For the one who makes the thing and lets someone else hand it over.",
+                 practice: "Sign your work today." },
+    orc:       { name: "The Orc",       t: [-1, 0, -2, 2],   tag: "For the one who looks cross and is only thinking.",
+                 practice: "Tell one person what the face means." }
   };
 
   // Each answer nudges the traits: [energy, company, heart, wildness].
