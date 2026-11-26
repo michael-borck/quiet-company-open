@@ -4,6 +4,8 @@
 (function () {
   "use strict";
   var S = window.QUIET_COMPANY;
+  // Seated height in mm for the heads that stand well above the rest; standing and walking add 25.
+  var TALL_MM = { alien: 128, jester: 131, bunny: 140, wizard: 140, giraffe: 148 };
   var HEAD_IDS = Object.keys(S.HEADS), BODY_IDS = Object.keys(S.BODIES);
 
   function el(tag, cls, text) {
@@ -81,7 +83,7 @@
 
     copy.appendChild(el("h2", null, "Details"));
     var specs = el("ul", "specs");
-    [["Height", body === "seated" ? "about 11 cm" : "about 14 cm"], ["Material", "Matte PLA, printed to order"],
+    [["Height", "about " + Math.round(((TALL_MM[head] || 113) + (body === "seated" ? 0 : 25)) / 10) + " cm"], ["Material", "Matte PLA, printed to order"],
      ["Finishes", "Still / Shadow / Becoming"], ["Head", "Arrives separate. Push it on; it fits all three poses"]].forEach(function (r) {
       var li = el("li"); li.appendChild(el("span", null, r[0])); li.appendChild(el("span", null, r[1])); specs.appendChild(li);
     });

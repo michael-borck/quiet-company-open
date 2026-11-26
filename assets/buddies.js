@@ -64,7 +64,13 @@
     monkey:    { name: "The Monkey",    t: [2, 1, -1, 2],    tag: "For the one whose mind has already left the room.",
                  practice: "When the mind swings off, say 'thinking' and come back. No scolding. Monkeys hate scolding." },
     octopus:   { name: "The Octopus",   t: [1, 0, -2, 2],    tag: "For the one doing eight things, six of them well.",
-                 practice: "Put seven arms down. Give the eighth thing everything." }
+                 practice: "Put seven arms down. Give the eighth thing everything." },
+    fish:      { name: "The Fish",      t: [-1, 2, 1, 1],    tag: "For the one who goes where the group goes, and is happy there.",
+                 practice: "Stop swimming for one breath. Notice the water is still holding you up." },
+    giraffe:   { name: "The Giraffe",   t: [0, -1, 1, -2],   tag: "For the one who saw it coming from a long way off.",
+                 practice: "Bring your head down to where everyone else is for one conversation today." },
+    jester:    { name: "The Jester",    t: [0, 2, -1, 2],    tag: "For the one who says the true thing as a joke.",
+                 practice: "Say one true thing today without the joke. The bells can stay on." }
   };
 
   // Each answer nudges the traits: [energy, company, heart, wildness].
