@@ -21,7 +21,7 @@
 
 *, *::before, *::after { box-sizing: border-box; }
 
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; scroll-padding-top: 76px; }
 
 body {
   margin: 0;
@@ -53,9 +53,16 @@ img, svg { display: block; max-width: 100%; }
 /* Header */
 
 .site-header {
+  position: sticky;
+  top: 0;
+  z-index: 5;
   max-width: var(--max);
   margin: 0 auto;
-  padding: 28px var(--pad);
+  padding: 18px var(--pad);
+  background: var(--paper);
+  /* carry the background to both edges of the window */
+  box-shadow: 0 0 0 100vmax var(--paper);
+  clip-path: inset(0 -100vmax);
   display: flex;
   align-items: center;
   justify-content: space-between;
