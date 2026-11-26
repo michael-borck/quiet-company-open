@@ -10,7 +10,7 @@ This repository is the public half of the project. The business repo is private.
 
 ```
 index.html                        home: poses, heads, finishes
-quiz.html                         seven questions
+quiz.html                         eight questions
 buddy.html                        the card for any head and pose (?head=frog&body=walking)
 credits.html 404.html
 assets/style.css  favicon.svg
