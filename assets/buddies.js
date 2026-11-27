@@ -97,20 +97,20 @@
                  practice: "Tell one person what the face means." },
     troll:     { name: "The Troll",     f: "creatures", t: [-1, -1, 1, 1], tag: "For the one who is happy under the bridge, thanks.",
                  practice: "Let one person cross today without the riddle." },
-    zeus:      { name: "Zeus",          f: "characters", t: [1, 1, -1, 0],    tag: "For the one whose mood sets the weather in the room.",
-                 practice: "Before you thunder, count to five. Most storms pass on their own." },
-    beard:     { name: "The Beard",     f: "people", t: [-1, 1, -1, 0],  tag: "For the one who says 'let me think about that' and then does.",
+    beard:     { name: "The Beard",     f: "people", t: [0, 1, -2, 1], tag: "For the one who says 'let me think about that' and then does.",
                  practice: "Give the next question a full breath before you answer it." },
-    longhair:  { name: "The Long Hair", f: "people", t: [-2, -2, 1, 2], tag: "For the one who lets things take as long as they take.",
+    longhair:  { name: "The Long Hair", f: "people", t: [-2, -2, 0, 2], tag: "For the one who lets things take as long as they take.",
                  practice: "Do one thing today at the speed it wants to go." },
-    bun:       { name: "The Bun",       f: "people", t: [0, 0, 0, -1],   tag: "For the one with everything tied up and out of the way.",
+    bun:       { name: "The Bun",       f: "people", t: [-1, 1, 0, 0], tag: "For the one with everything tied up and out of the way.",
                  practice: "Let one thing down today. It can go back up tomorrow." },
-    ponytail:  { name: "The Ponytail",  f: "people", t: [2, 1, 0, 0],    tag: "For the one already halfway out the door.",
+    ponytail:  { name: "The Ponytail",  f: "people", t: [1, 0, 0, 0], tag: "For the one already halfway out the door.",
                  practice: "Stop in the doorway. One breath. Then go." },
     curls:     { name: "The Curls",     f: "people", t: [0, 2, 1, 1],    tag: "For the one who will not be brushed into line.",
                  practice: "Leave one thing today exactly as untidy as it wants to be." },
     glasses:   { name: "The Glasses",   f: "people", t: [-2, -2, -2, -1], tag: "For the one who read the terms and conditions.",
-                 practice: "Take them off. Let the room go soft for one minute." }
+                 practice: "Take them off. Let the room go soft for one minute." },
+    quiff:     { name: "The Quiff",     f: "people", t: [2, 1, -1, 1],   tag: "For the one who makes it look easy and would like you to think it is.",
+                 practice: "Tell one person what it actually took." }
   };
 
   // Each answer nudges the traits: [energy, company, heart, wildness].

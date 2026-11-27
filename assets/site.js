@@ -5,8 +5,8 @@
   "use strict";
   var S = window.QUIET_COMPANY;
   // Seated height in mm for the heads that stand well above the rest; standing and walking add 25.
-  var TALL_MM = { glasses: 118, cyclops: 122, longhair: 122, beard: 123, ponytail: 124, curls: 130, bun: 134, troll: 122, husky: 123, lion: 123, robot: 123, dragon: 125, ghost: 125, minotaur: 126, zeus: 127,
-                  alien: 128, jester: 131, unicorn: 137, bunny: 140, elf: 140, wizard: 140, giraffe: 148 };
+  var TALL_MM = { glasses: 118, cyclops: 123, longhair: 122, beard: 123, ponytail: 124, curls: 130, bun: 134, troll: 122, husky: 123, lion: 123, robot: 123, quiff: 125, ghost: 125, minotaur: 126, 
+                  alien: 128, jester: 131, dragon: 132, unicorn: 137, bunny: 140, elf: 140, wizard: 140, giraffe: 148 };
   var HEAD_IDS = Object.keys(S.HEADS), BODY_IDS = Object.keys(S.BODIES);
 
   function el(tag, cls, text) {
