@@ -5,8 +5,10 @@
   "use strict";
   var S = window.QUIET_COMPANY;
   // Seated height in mm for the heads that stand well above the rest; standing and walking add 25.
-  var TALL_MM = { fish: 116, glasses: 118, cyclops: 123, longhair: 122, beard: 123, ponytail: 124, curls: 130, bun: 134, troll: 122, husky: 123, lion: 123, robot: 123, quiff: 125, ghost: 125, minotaur: 126, 
-                  alien: 128, viking: 130, jester: 131, dragon: 132, bunny: 140, elf: 140, wizard: 140, giraffe: 148, unicorn: 155 };
+  var TALL_MM = { robot: 142, astronaut: 128, diver: 130, knight: 135, wizard: 163, pirate: 133, viking: 151, alien: 148, monk: 123, panda: 129, penguin: 132, elephant:
+                  132, husky: 142, dog: 126, cat: 135, lion: 142, bunny: 163, frog: 124, cobra: 134, owl: 134, pig: 129, monkey: 128, octopus: 134, fish: 134, giraffe:
+                  172, jester: 152, unicorn: 182, cyclops: 142, minotaur: 145, ghost: 144, mummy: 126, dragon: 153, elf: 163, orc: 133, troll: 141, beard: 142,
+                  longhair: 140, bun: 156, ponytail: 143, curls: 150, glasses: 136, quiff: 144 };
   var HEAD_IDS = Object.keys(S.HEADS), BODY_IDS = Object.keys(S.BODIES);
 
   function el(tag, cls, text) {
@@ -109,7 +111,7 @@
 
     copy.appendChild(el("h2", null, "Details"));
     var specs = el("ul", "specs");
-    [["Height", "about " + Math.round(((TALL_MM[head] || 113) + (body === "seated" ? 0 : 25)) / 10) + " cm"], ["Material", "Matte PLA, printed to order"],
+    [["Height", "about " + Math.round(((TALL_MM[head] || 135) + (body === "seated" ? 0 : 25)) / 10) + " cm"], ["Material", "Matte PLA, printed to order"],
      ["Finishes", "Still / Shadow / Becoming"], ["Head", "Arrives separate. Push it on; it fits all three poses"]].forEach(function (r) {
       var li = el("li"); li.appendChild(el("span", null, r[0])); li.appendChild(el("span", null, r[1])); specs.appendChild(li);
     });
